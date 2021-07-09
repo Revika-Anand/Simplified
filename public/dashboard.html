@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/dash.css" defer>
+
+    <script src="JS/dash.js" defer></script>
+    <script src="server.js" defer></script>
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <img src="images/logo_white.png" height="40px" style="float: right">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#">Github Repository</a>
+    </div>
+    <span id="menu" onclick="openNav()"><img src="images/menu.png" height="30px" width="40px"></span>
+    <div id="home">
+        <div class="parallax">
+            <div class="caption">
+                <span class="border">Welcome to Simplified!<br></span>
+                <form action="/new_room">
+                    <button class="btn-block btn-color">Start a new call</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div id="main">        
+            <div id="text">
+                <img src="images/logo.png" height="200px" style="vertical-align:middle">
+                <br>
+                We bring to you free video calling facilities.<br>
+                Be it for your office meetings or your family game night, 
+                we offer excellent services to our clients!
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div style="text-align: left">
+            <p>Made By: Revika Anand<br>
+            E-mail: clara_23nov1986@yahoo.com
+            <input type="button" value="Back to top" style="position: absolute; right: 10px;" onclick="backToTop()">
+            </p>            
+        </div>        
+    </footer>
+</body>
+</html>

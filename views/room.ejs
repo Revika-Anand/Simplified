@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>const ROOM_ID = "<%= roomId %>"</script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="JS/script.js" defer></script>
+    <script src="JS/dash.js" defer></script>
+
+    <link rel="stylesheet" href="CSS/call_style.css" defer>
+    
+    <title>Call</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <!--video grid for displaying the videos of the users-->
+        <div id="video_grid"></div>
+
+        <!--buttons for different features-->
+        <div class="controls">
+            <div class="option">
+                <!--invite button-->
+                <button id="invite" onclick="invite()">
+                    <img src = "images/add_user.png"/>
+                </button>
+            </div>
+
+            <!--audio button-->
+            <div class="option" id="muteAudio">
+                <button id="mA" onclick="muteAudio()">
+                    <img src = "images/mic_on.png" height="50px" width="50px" border="0"/>
+                </button>
+            </div> 
+
+            <!--end call button-->
+            <div class="option" id="endCall">
+                <a href="dashboard.html" defer>
+                    <img onclick="end()" src = "images/endcall.png" height="50px" width="50px" border="0"/>
+                </a>
+            </div>
+
+            <!--video button-->         
+            <div class="option" id="disVid">
+                <button id="mV" onclick="disableVid()">
+                    <img src = "images/vid_enable.png" height="50px" width="50px" border="0"/>
+                </button>
+            </div>
+
+            <!--open chat button-->
+            <div class="option">
+                <button id="open" onclick="open_chat()">
+                    <img src = "images/chat.png" height="50px" width="50px" border="0"/>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="chat_win" id="chat">
+        <a href="javascript:void(0)" class="closebtn" onclick="close_chat()">&times;</a>
+        <div class="messages" id="sent_msg"></div>
+        
+        <div class="align">
+            <div class="type">
+                <input id="chat_msg" type="text" autocomplete="off" placeholder="Type message here...">
+            </div>
+
+            <div class="snd" id="send">
+                <button id="send_msg" onclick="send_msg()">
+                    <img src="images/send.png"/>
+                </button>
+            </div> 
+
+        </div>     
+
+    </div> 
+    
+</body>
+</html>
