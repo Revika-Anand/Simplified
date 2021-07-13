@@ -13,3 +13,10 @@ The tech stack used for this project includes the following languages and librar
 7. WebRTC
 8. PeerJS
 
+# Link for the website
+https://simplified.azurewebsites.net/dashboard.html
+
+# For running on you local system
+In order to run this application on your local system, first some changes need to be made in the script.js file.
+Go to the public folder.
+Then the JS folder and open script.js.
