@@ -16,7 +16,7 @@ The tech stack used for this project includes the following languages and librar
 # Link for the website
 https://simplified.azurewebsites.net/dashboard.html
 
-# For running on you local system
+# For running on your local system
 ## Setting up the code
 1. In order to run this application on your local system, first some changes need to be made in the script.js file.
 2. Go to the public folder.
@@ -36,6 +36,6 @@ var peer = new Peer(undefined, {
   debug: "true"
 });
 ## Running the code
-1. Open the command prompt and rum `npm install`.
+1. Open the command prompt and run `npm install`.
 2. Now run `node server.js`.
 3. Open chrome browser and go to localhost:3000
